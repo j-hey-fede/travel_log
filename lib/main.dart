@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'WanderLog',
-      home: HomeScreen(),
+      home: MainScreen(),
     );
   }
 }
