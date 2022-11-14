@@ -8,7 +8,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // TODO: create routes, create fake data, create what a travel log post will look like, design form to create posts //
+  // TODO: Custom App bar and logo, Entry UI, design form to create posts //
 
   @override
   Widget build(BuildContext context) {
