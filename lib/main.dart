@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_log/screens/homescreen.dart';
+import 'package:travel_log/screens/main_wrapper.dart';
 
 void main() {
   runApp(const MyApp());

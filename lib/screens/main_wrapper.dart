@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_log/screens/create_screen.dart';
 import 'package:travel_log/screens/explore_screen.dart';
+import 'package:travel_log/screens/home.dart';
 import 'package:travel_log/screens/settings_screen.dart';
 import 'package:travel_log/screens/share_screen.dart';
 
@@ -10,9 +11,6 @@ class MainScreen extends StatefulWidget {
   @override
   State<MainScreen> createState() => _MainScreenState();
 }
-
-// so... after all that... it was the iPhone Simulator
-// that was the problem :)
 
 class _MainScreenState extends State<MainScreen> {
   int _currIndex = 2;
@@ -75,26 +73,5 @@ class _MainScreenState extends State<MainScreen> {
             ),
           ],
         ));
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Text(
-          "Home Screen... all your latest entries",
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.w700,
-          ),
-          textAlign: TextAlign.center,
-        ),
-      ),
-    );
   }
 }

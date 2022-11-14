@@ -6,6 +6,7 @@ class TravelLog {
   final List<String> multiImage;
   final String title;
   final String location;
+  final DateTime timestamp;
 
   TravelLog({
     required this.note,
@@ -13,5 +14,6 @@ class TravelLog {
     required this.multiImage,
     required this.title,
     required this.location,
+    required this.timestamp,
   });
 }
