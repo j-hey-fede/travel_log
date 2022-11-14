@@ -4,6 +4,7 @@ import 'package:travel_log/screens/explore_screen.dart';
 import 'package:travel_log/screens/home.dart';
 import 'package:travel_log/screens/settings_screen.dart';
 import 'package:travel_log/screens/share_screen.dart';
+import 'package:travel_log/widgets/app_bar.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -31,6 +32,32 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          toolbarHeight: 70,
+          backgroundColor: Colors.grey,
+          leading: const Icon(
+            Icons.travel_explore,
+            size: 32,
+            color: Colors.white70,
+          ),
+          title: const Padding(
+            padding: EdgeInsets.symmetric(vertical: 8.0),
+            child: CustomAppBar(),
+          ),
+          actions: [
+            InkWell(
+              onTap: () {},
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Icon(
+                  Icons.add_circle,
+                  size: 32,
+                  color: Colors.white70,
+                ),
+              ),
+            )
+          ],
+        ),
         body: _screens[_currIndex],
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
